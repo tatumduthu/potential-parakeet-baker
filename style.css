@@ -1,0 +1,205 @@
+/* order of css tags? 
+
+- last one wins.
+@import up top
+normal html tags
+classes 
+ids 
+
+*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
+
+body {
+  font-family: "Faculty Glyphic", serif;
+}
+
+h1, p {
+  color: #CC6666;
+}
+
+#bedroom {
+  height: 650px; 
+  width: 700px; 
+  background-color: #CCC; 
+  margin: auto; 
+  position: relative;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+#desk, #bed, .furniture, #trophyCase, #tv, .lamps, .doors {
+  text-align: center;
+  border: solid 2px black;
+  position: relative;
+}
+
+#desk {
+  height: 200px;
+  width: 110px;
+  background-color: #CC6666;
+  top: 100px;
+  left: -24px;
+}
+
+#bed {
+  height: 340px;
+  width: 280px;
+  background-color: #6699CC;
+  cursor: grab;
+  top: 285px;
+  left: 60px;
+}
+
+.pillows {
+  height: 80px;
+  width: 110px;
+  border: solid 2px black;
+  
+/*   new: rounded instead of box, from w3schools */
+  border-radius: 10%;
+  background-color: #d9e4ff;
+  text-align: center;
+  position: relative;
+  right: 210px;
+  top: 520px;
+}
+
+.furniture {
+  height: 110px;
+  width: 150px;
+  background-color: #faaf90;
+}
+
+#firstDresser {
+  bottom: 382px;
+  left: 260px;
+}
+
+#secondDresser {
+  bottom: 220px;
+  left: 395px;
+  transform: rotate(90deg);
+}
+
+#nightStand {
+  top: 150px;
+  left: 173px;
+}
+
+#trophyCase {
+  height: 170px;
+  width: 95px;
+  background-color: #9999CC;
+  right: 470px;
+}
+
+#tv {
+  height: 32px;
+  width: 110px;
+  background-color: #9999CC;
+  bottom: 340px;
+  right: 266px;
+}
+
+.lamps {
+  height: 60px;
+  width: 60px;
+  border: solid 2px black;
+  
+/*   new: circular object, from w3shcools */
+  border-radius: 50%;
+  background-color: #FFFF66;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Positioning the lamps */
+#firstLamp {
+  position: absolute;
+  top: 250px;
+  left: 10px;
+}
+
+#secondLamp {
+  position: absolute;
+  bottom: 10px;
+  right: 70px;
+}
+
+.doors {
+  height: 23px;
+  width: 90px;
+  background-color: white;
+  bottom: 580px;
+}
+
+/* Class mascot upside down */
+.mascot {
+  font-size: 3rem;
+  position: absolute;
+  bottom: 150px;
+  left: 45%;
+  transform: rotate(180deg);
+}
+
+
+
+
+/* .floatBox { */
+/*   height: 30px;  */
+/*   width: 30px; */
+/*   width: 30%; 
+  margin: 4px; 
+  background-color: tomato;  */
+/*   float: left;  */
+/*   float: right;
+  
+}
+
+.floatClear { */
+/*   clear: right;  */
+/* } */
+
+/* see clearfix: https://www.w3schools.com/howto/howto_css_clearfix.asp */
+
+/* #fxt {
+  height: 5%; 
+  width: 5%; 
+  border: dotted 3px green; 
+  position: fixed; 
+  bottom: 5px; 
+/*   top: 0px; 
+  right: 700px;  */
+/*   right: 5px; 
+}
+
+#banner {
+  height: 75px; 
+  width: 80%;
+  margin: auto; 
+  border: dotted 3px green; 
+  position: fixed; 
+  top: 30px; 
+  left: 0;
+  right: 0;
+  
+}
+
+
+#chatBox {
+  
+  height: 50px; 
+  width: 30px; 
+  border: dashed 2px red; 
+  position: fixed; 
+  top: 10%; 
+  right: 0px; 
+}  */
